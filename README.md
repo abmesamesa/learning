@@ -1,3 +1,3 @@
 # katas
 
-Some code I write for learning purposes.
+When I write some code for learning purpose, I store it here.
