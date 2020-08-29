@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://abrahan:IEgiSfCbmdse3366@cluster0-rkoxv.mongodb.net/mean-course-master?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://your-url-here')
   .then(() => {
     console.log('DB connection succeeded.');
   })
