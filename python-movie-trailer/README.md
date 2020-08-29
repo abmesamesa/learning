@@ -9,9 +9,6 @@ I create the file **greatest_movies.csv** as a data source. It contains the best
 ## Installation
 
 Clone the GitHub repository.
-```
-git clone https://github.com/defnx/ud_movie_trailer.git
-```
 
 ## Usage
 
