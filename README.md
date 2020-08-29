@@ -1,3 +1,3 @@
-# katas
+# Learning
 
-Some code I write for learning purposes.
+Code I write for learning purposes.
