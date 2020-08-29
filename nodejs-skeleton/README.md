@@ -16,10 +16,7 @@ This is a skeleton of a ES6 NodeJS web application.
 * [Grunt](https://gruntjs.com/)
 
 ## Clone and install the skeleton
-```Shell 
-git clone git@github.com:defnx/defnode.git
-npm install
-```
+
 ## Create your sql database
 You need a sql friendly db understood by Sequelize.
 ## Edit the database configuration
