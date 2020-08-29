@@ -1,0 +1,23 @@
+{
+  "name": "katas-ecmascript",
+  "version": "1.0.0",
+  "description": "A series of EcmaScript katas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brhmms/katas-ecmascript.git"
+  },
+  "keywords": [
+    "ecmascript",
+    "katas",
+    "algorithm"
+  ],
+  "author": "@brhmmsms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brhmms/katas-ecmascript/issues"
+  },
+  "homepage": "https://github.com/brhmms/katas-ecmascript#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
