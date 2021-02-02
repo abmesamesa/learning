@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Create an event</h1>
-    <form>
+    <form @submit.prevent="sendForm">
       <BaseSelect
         :options="categories"
         v-model="event.category"
@@ -65,6 +65,7 @@ import BaseInput from '@/components/BaseInput'
 import BaseSelect from '@/components/BaseSelect'
 import BaseCheckbox from '@/components/BaseCheckbox'
 import BaseRadioGroup from '@/components/BaseRadioGroup'
+import axios from 'axios'
 
 export default {
   components: { BaseRadioGroup, BaseCheckbox, BaseSelect, BaseInput },
@@ -94,6 +95,18 @@ export default {
         { label: 'Yes', value: 1 },
         { label: 'No', value: 0 }
       ]
+    }
+  },
+  methods: {
+    sendForm () {
+      axios.post(
+        'https://my-json-server.typicode.com/abmesamesa/json-server/events',
+        this.event
+      ).then(function (response) {
+        console.log('Response', response)
+      }).catch(function (err) {
+        console.log('Error', err)
+      })
     }
   }
 }
