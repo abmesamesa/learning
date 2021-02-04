@@ -4,6 +4,8 @@ import EventDetails from '../views/event/Details.vue'
 import EventRegister from '../views/event/Register'
 import EventEdit from '../views/event/Edit'
 import EventLayout from '../views/event/Layout'
+import NotFound from '../views/NotFound'
+import NetworkError from '../views/NetworkError'
 
 import About from '../views/About.vue'
 
@@ -67,6 +69,25 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  // Default component in case the resource does not exist
+  {
+    path: '/404/:resource',
+    name: '404Resource',
+    component: NotFound,
+    props: true
+  },
+    // redirect to this page in case of a network error
+  {
+    path: '/network-error',
+    name: 'NetworkError',
+    component: NetworkError
+  },
+    // Default component in case the page does not exist
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 
