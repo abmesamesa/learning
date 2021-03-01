@@ -17,7 +17,6 @@ RUN rm /app/hello.log
 RUN rm /app/composer.json
 RUN rm /app/composer.lock
 RUN rm /app/Dockerfile
-RUN rm -r /app/.idea
 
 # STAGE 1: Installing system dependencies and copying the code
 FROM php:7.2-apache
